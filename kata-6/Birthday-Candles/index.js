@@ -10,14 +10,17 @@ let ar = [3,1,3,2,4]
 // [3,1,3,2,4] => 1
 
 function birthdayCakeCandles(ar){
-  let count = 0
-	let tallest = ar.reduce((a,b)=>{
-  	return Math.max(a, b)
-  })
-  ar.map((num) => {
-  	num === tallest && count++
-  })
-  return count
+    let count = 0
+    
+    let tallest = ar.reduce((a,b)=>{
+  	    return Math.max(a, b)
+    })
+
+     ar.map((num) => {
+    	num === tallest && count++
+    })
+
+    return count
 }
 
 // birthdayCakeCandles(ar)
