@@ -7,9 +7,15 @@ const bits = (n)  => {
     const bitArr = (n).toString(2).split('');
 
     // make a sum with the array and make the index a Number
-    const counted = bitArr.reduce((acc, cur) => acc + Number(cur), 0);
+    const counted = bitArr.reduce((acc, cur) => acc + (+cur), 0);
 
     return counted;
 }
+
+// improved option
+// const bits = (n) => {
+//     return n !== 0 ? n.toString(2).match(/1/g).length : 0;
+// }
+
 
 module.exports = bits;
