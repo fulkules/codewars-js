@@ -24,5 +24,8 @@ const uniqueInOrder = iterable => {
 };
 
 // refactor
+// const uniqueInOrder= (iterable) =>{
+//     return [...iterable].filter((a, i) => a !== iterable[i-1])
+// }
 
 module.exports = uniqueInOrder;
