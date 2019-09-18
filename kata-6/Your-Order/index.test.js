@@ -11,7 +11,7 @@ test("Test 2", () => {
 test("Test 3", () => {
   expect(order("")).toStrictEqual("");
 });
-test("Test 3", () => {
+test("Test 4", () => {
   expect(
     order("equ8ally pr4ejudice, ev7eryone I5 3all Fr1ee of2 ha6te")
   ).toStrictEqual("Fr1ee of2 3all pr4ejudice, I5 ha6te ev7eryone equ8ally");
