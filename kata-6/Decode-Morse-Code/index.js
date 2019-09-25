@@ -56,4 +56,14 @@ const decode = (morseCode) => {
     return decodeString;
 }
 
+// refactor
+// const decode = (morseCode) => {
+//     return morseCode
+//       .trim()
+//       .split(/  | /)
+//       .map( (code) => MORSE_CODE[code] || ' ')
+//       .join('')
+//       .toUpperCase();
+// }
+
 module.exports = decode;
