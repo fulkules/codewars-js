@@ -24,7 +24,7 @@ const findNb = (m) => {
         // increment n
         n++;
         // volume will equal volume plus (n*n*n)
-        volume += n*n*n;
+        volume += n*n*n; // refactor line to: volume += Math.pow(n, 3);
     }
     // if volume is not equal to m return -1
     // else return n
