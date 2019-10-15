@@ -17,15 +17,13 @@ function tickets(peopleInLine){
   let amount100 = 0;
 
   for(let i = 0; i < peopleInLine.length; i++){
-
     if(peopleInLine[i] === 100){
-      if(amount25 >= 3){
-        amount25 -= 3;
-        amount100++;
-      }else if(amount25 >= 1 && amount50 >= 1){
+      amount100++;
+      if(amount25 >= 1 && amount50 >= 1){
        amount25 -= 1;
        amount50 -= 1;
-       amount100++;
+      }else if(amount25 >= 3){
+        amount25 -= 3;
       }else{
         return "NO";
       }
@@ -46,5 +44,17 @@ function tickets(peopleInLine){
   }
   return "YES";
 }
+
+// refactor
+// function tickets(peopleInLine){
+//     let [c25,c50,c100] = [0,0,0];
+//     for(let v of peopleInLine) {
+//       if(v===25) c25++;
+//       if(v===50) {c50++; c25--;}
+//       if(v===100) {c25--; c50>0?c50--:c25-=2;}
+//       if(c25<0||c50<0) return 'NO'
+//     }
+//     return 'YES'
+//   }
 
 module.exports = tickets;
