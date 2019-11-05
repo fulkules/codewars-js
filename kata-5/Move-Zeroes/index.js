@@ -3,8 +3,9 @@
 // moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]
 
 // fn(arr) => arr
-// iterate the array
-    // if the item at this position is 0, pull it out and append it to the end of the array
+// filter a new array with all the zeroes
+// filter a new array with all the other chars
+// merge these two arrays with the zeroes last
 
 function moveZeroes(arr){
     let zeroes = arr.filter(item => item === 0);
