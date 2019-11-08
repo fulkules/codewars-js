@@ -6,4 +6,4 @@ describe('anagrams', function() {
       expect(anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer'])).toStrictEqual(['carer', 'racer']);
       expect(anagrams('laser', ['lazing', 'lazy',  'lacer'])).toStrictEqual([]);
     });
-  });
+});
