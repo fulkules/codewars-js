@@ -13,24 +13,36 @@
 // Divison should be integer division. For example, this should return 2, not 2.666666...:
 // eight(dividedBy(three()));
 
-const expression = (number, operation) =>
-  operation ? operation(number) : number
+function zero   (calculate) { return calculate ? calculate(0) : 0 }
+function one    (calculate) { return calculate ? calculate(1) : 1 }
+function two    (calculate) { return calculate ? calculate(2) : 2 }
+function three  (calculate) { return calculate ? calculate(3) : 3 }
+function four   (calculate) { return calculate ? calculate(4) : 4 }
+function five   (calculate) { return calculate ? calculate(5) : 5 }
+function six    (calculate) { return calculate ? calculate(6) : 6 }
+function seven  (calculate) { return calculate ? calculate(7) : 7 }
+function eight  (calculate) { return calculate ? calculate(8) : 8 }
+function nine   (calculate) { return calculate ? calculate(9) : 9 }
 
-const zero = operation => expression(0, operation)
-const one = operation => expression(1, operation)
-const two = operation => expression(2, operation)
-const three = operation => expression(3, operation)
-const four = operation => expression(4, operation)
-const five = operation => expression(5, operation)
-const six = operation => expression(6, operation)
-const seven = operation => expression(7, operation)
-const eight = operation => expression(8, operation)
-const nine = operation => expression(9, operation)
 
-const plus = x => y => y + x
-const minus = x => y => y - x
-const times = x => y => y * x
-const dividedBy = x => y => y / x
+function plus(y)  { return function (x) { return x + y} }
+function minus(y) { return function (x) { return x - y} }
+function times(y) { return function (x) { return x * y} }
+function dividedBy(y) { return function (x) {
+    return y === 0 ? 'division by zero' : Math.floor(x / y) 
+  } 
+}
+
+// refactor
+// ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+// .forEach(function (name, n) {
+//   this[name] = function (f) { return f ? f(n) : n }
+// });
+
+// function plus(n)      { return function (a) { return a + n } }
+// function minus(n)     { return function (a) { return a - n } }
+// function times(n)     { return function (a) { return a * n } }
+// function dividedBy(n) { return function (a) { return a / n } }
 
 // Function Export
 module.exports = {
