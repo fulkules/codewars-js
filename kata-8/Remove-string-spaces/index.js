@@ -4,4 +4,9 @@ function noSpace(x){
  return x.replace(/\s/g,'');
 }
 
+// non-regex solution
+// function noSpace(x){
+//  return x.split(' ').join('');
+// }
+
 module.exports = noSpace;
