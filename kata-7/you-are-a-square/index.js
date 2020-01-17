@@ -21,6 +21,6 @@
 const isSquare = n => Number.isInteger(Math.sqrt(n)); 
 
 // IE compatible refactor
-// const isSquare = n => Math.sqrt(n) % 1 === 0;
+// const isSquare = n => Math.sqrt(n) % 1 === 0; 
 
 module.exports = isSquare;
