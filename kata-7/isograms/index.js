@@ -28,4 +28,26 @@ const isIsogram = str => !/(\w).*\1/i.test(str);
 //     return result;
 // }
 
+// another option
+// function isIsogram(str){
+//     // ignore case
+//     str = str.toLowerCase();
+    
+//     let stash = {}; // hold the existing letters
+    
+//     // walk the string letter by letter
+//     for( var i = 0; i < str.length; i++){
+      
+//       // is the letter present in stash?
+//       if( stash[str[i]] )
+//         return false; // then its double => return with false
+//       else 
+//         stash[str[i]] = true;  // otherwise it has not been found
+      
+//     }
+    
+//     return true; // if we pass all letters, none was double
+    
+//   }
+
 module.exports = isIsogram;
