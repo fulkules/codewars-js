@@ -20,6 +20,6 @@ function isTriangle(a,b,c) {
 }
 
 // best practice
-const isTriangle = (a,b,c) => a + b > c && a + c > b && c + b > a;
+// const isTriangle = (a,b,c) => a + b > c && a + c > b && c + b > a;
 
 module.exports = isTriangle;
