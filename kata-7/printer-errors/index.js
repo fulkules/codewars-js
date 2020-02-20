@@ -17,6 +17,7 @@
 // error_printer(s) => "8/22"
 
 function printerError(s) {
+    // if printer displays letter other than a-m it is an error
     return `${s.replace(/[a-m]/gi, '').length}/${s.length}`
 }
 
