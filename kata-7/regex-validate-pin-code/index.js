@@ -9,7 +9,7 @@
 // validatePIN("a234") === false
 
 function validatePIN(pin) {
-    if(pin.length < 4) return false;
+    // if(pin.length < 4) return false; early return optional
     return /^(\d{4}|\d{6})$/.test(pin);
 }
 
