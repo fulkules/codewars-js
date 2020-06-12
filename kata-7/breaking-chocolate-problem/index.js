@@ -20,7 +20,7 @@ Minimum breaks = ( rows x columns ) - 1
   */
 
 function breakChocolate(n,m){
-    return n && m ? n*m) - 1 : 0;
+    return (n && m) ? n*m - 1 : 0;
 }
 
 // using Math.max()
