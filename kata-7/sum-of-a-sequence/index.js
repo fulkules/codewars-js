@@ -24,4 +24,12 @@ const sequenceSum = (begin, end, step) => {
     return sum;
 };
 
+// refactor using recursion
+// const sequenceSum = (begin, end, step) => {
+//   if (begin > end) {
+//     return 0;
+//   }
+//   return begin + sequenceSum(begin + step, end, step);
+// };
+
 module.exports = sequenceSum;
