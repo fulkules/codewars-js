@@ -42,4 +42,12 @@ function arithmetic(a,b,operator){
 //     }
 // }
 
+// dependendy refactor
+// const arithmetic = (a, b, operator) => ({
+//   'add'     : a + b,
+//   'subtract': a - b,
+//   'multiply': a * b,
+//   'divide'  : a / b
+// }[operator]);
+
 module.exports = arithmetic;
