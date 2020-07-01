@@ -6,4 +6,4 @@ describe(sumTwoSmallestNumbers, () => {
         expect(sumTwoSmallestNumbers([15, 28, 4, 2, 43])).toStrictEqual(6);
         expect(sumTwoSmallestNumbers([23, 71, 33, 82, 1])).toStrictEqual(24);
     })
-})` `
+})
