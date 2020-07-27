@@ -13,6 +13,6 @@
 // grab the two highest values
 // return as array
 
-const twoOldestAges = ages => ages.sort((a,b) => a - b).slice(2);
+const twoOldestAges = ages => ages.sort((a,b) => a - b).slice(-2);
 
 module.exports = twoOldestAges;
