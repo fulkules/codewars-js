@@ -19,7 +19,7 @@ function isPowerOfTwo(n) {
 //     return Number.isInteger(Math.log2(n));
 // }
 
-// using bitwise AND
+// using bitwise AND operator
 // function isPowerOfTwo(n) {
 //   return n === 0 ? false : (n & (n - 1)) == 0
 // }
