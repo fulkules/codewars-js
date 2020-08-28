@@ -32,9 +32,9 @@
 // fn(n) => arr
 // initialize an empty arr var
 // if n is positive iterate from 0 to n incrementing
-    // push into the array i + i
+    // push into the array (i + i) + i
 // if n is negative iterate from 0 to n decrementing
-    // push into the array i - i
+    // push into the array _i - i) - i
 
 function sumOfN(n) {
     let array = [];
