@@ -1,7 +1,7 @@
 const orderedCount = require('./index');
 
 describe(orderedCount, () => {
-    it('should return a number', () => {
+    it('should return an array', () => {
         expect(orderedCount('abracadabra')).toBeInstanceOf(Array);
     });
     it('should return an array of tuples with the ordered count of characters', () => {
