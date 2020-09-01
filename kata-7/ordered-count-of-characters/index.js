@@ -9,7 +9,6 @@
 // fn(str) => array
 // initialize empty array var
 // iterate string
-// initialize count var for each loop
 // get unique chars and quantity
     // iterate the new created array
         // if char is not found, add a new array tuple with the char and a count at 1
