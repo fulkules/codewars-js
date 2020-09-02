@@ -12,13 +12,7 @@
 // vert_mirror(s) => "dcba\nhgfe\nlkji\nponm"
 // Horizontal mirror: hor_mirror (or horMirror or hor-mirror)
 // hor_mirror(s) => "mnop\nijkl\nefgh\nabcd"
-// or printed:
-//
-//     vertical mirror   |horizontal mirror
-// abcd --> dcba     |abcd --> mnop
-// efgh     hgfe     |efgh     ijkl
-// ijkl     lkji     |ijkl     efgh
-// mnop     ponm     |mnop     abcd
+
 // Task:
 //     Write these two functions
 // and
