@@ -32,4 +32,12 @@ function foldTo(distance){
     return count;
 }
 
+// using for loop
+// function foldTo(distance) {
+//   if(distance <= 0) return null;
+//   let folds = 0;
+//   for(let i = 0.0001; i < distance; i += i) folds++;
+//   return folds;
+// }
+
 module.exports = foldTo;
