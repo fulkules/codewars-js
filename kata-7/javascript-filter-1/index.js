@@ -26,4 +26,16 @@ function searchNames(logins){
     return logins.filter(item => item[0].slice(-1) === '_');
 }
 
+// using regex
+// function searchNames( logins ){
+//   return logins.filter(function(arr){
+//     return arr[0].match(/_$/);});
+// }
+
+// using String.prototype.endsWith (https://tc39.es/ecma262/#sec-string.prototype.endswith)
+// ECMA Script 262 - 2021. No IE support
+// function searchNames( logins ){
+//   return logins.filter(a=>a[0].endsWith('_'));
+// }
+
 module.exports = searchNames;
