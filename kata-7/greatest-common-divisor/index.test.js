@@ -1,7 +1,7 @@
 const mygcd = require('./index');
 
 describe(mygcd, () => {
-    it('should return a string', () => {
+    it('should return a number', () => {
         expect(typeof mygcd(30, 12)).toBe('number');
     });
     it('should return the greatest common divisor of two positive integers', () => {
