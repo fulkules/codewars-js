@@ -64,4 +64,22 @@ function pattern(n) {
 //         return string
 //     }).join('\n');
 
+// best practice
+// function pattern(n) {
+//   if (n < 1) return ''
+//   var lines = []
+//
+//   for (var i = 0; i < n; i++) {
+//     var line = ''
+//
+//     for (var j = n; j > i; j--) {
+//       line += j
+//     }
+//
+//     lines.push(line)
+//   }
+//
+//   return lines.join('\n')
+// }
+
 module.exports = pattern;
