@@ -1,7 +1,7 @@
 const pattern = require('./index');
 
 describe(pattern, () => {
-    it('should return an array', () => {
+    it('should return a string', () => {
         expect(typeof pattern(1)).toBe('string');
     });
     it('should return', () => {
