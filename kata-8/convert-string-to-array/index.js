@@ -6,7 +6,7 @@
 // "I love arrays they are my favorite" ==>
 // ["I", "love", "arrays", "they", "are", "my", "favorite"]
 
-
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
 
 function stringToArray(s){
     return s.split(' ');
