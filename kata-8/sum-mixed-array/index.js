@@ -13,7 +13,7 @@ function sumMix(x){
     return x.reduce((acc, cur) => acc + +cur, 0);
 }
 
-// using eval
+// using eval warning -- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval#Never_use_eval!
 // function sumMix(x){
 //   return eval( x.join("+") )
 // }
