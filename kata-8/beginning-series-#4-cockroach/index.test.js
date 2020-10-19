@@ -8,4 +8,4 @@ describe('cockroachSpeed', function() {
         expect(cockroachSpeed(1.08)).toStrictEqual(30);
         expect(cockroachSpeed(0)).toStrictEqual(0);
     });
-})
+});

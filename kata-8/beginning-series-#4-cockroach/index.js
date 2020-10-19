@@ -21,4 +21,11 @@ function cockroachSpeed(s){
     return Math.floor(cm / 60 / 60);
 }
 
+// function cockroachSpeed(s) {
+//   const secsInHour = 3600;
+//   const centimetersInKilometers = 100000;
+//
+//   return Math.floor((s*centimetersInKilometers)/secsInHour);
+// }
+
 module.exports = cockroachSpeed;
