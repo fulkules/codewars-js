@@ -18,4 +18,6 @@ function paperwork(n, m){
 // single line refactor
 // const paperwork = (n, m) => n > 0 && m > 0 ? n * m : 0;
 
+// const paperwork = (n , m) => n < 0 || m < 0 ? 0 : n * m;
+
 module.exports = paperwork;
