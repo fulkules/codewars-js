@@ -12,4 +12,13 @@ function removeEveryOther(arr){
     return arr.filter((item, i) => !(i % 2) && item);
 }
 
+// using regular for loop
+// function removeEveryOther(arr){
+//   var newArr=[];
+// for (var i = 0; i < arr.length; i+=2){
+//   newArr.push(arr[i]);
+//   }
+// return newArr;
+// }
+
 module.exports = removeEveryOther;
