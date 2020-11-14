@@ -18,4 +18,17 @@
 
 const multiplyAll = arr => num => arr.map(x => x * num);
 
+// overcomplicated currying example
+// function curry(f) {
+//   return function(a) {
+//     return function(b) {
+//       return f(a, b);
+//     };
+//   };
+// }
+// function sum(array, multiplier) {
+//   return array.map((num) => num * multiplier);
+// }
+// let multiplyAll = curry(sum);
+
 module.exports = multiplyAll;
