@@ -4,7 +4,7 @@ describe('square', function() {
     it('should return a number', function() {
         expect(typeof square(3)).toBe('number');
     });
-    it('should return the squared value of the arg', function() {
+    it('should return the squared value of the arga', function() {
         expect(square(3)).toStrictEqual(9);
     });
 });
