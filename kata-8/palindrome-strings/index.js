@@ -19,7 +19,7 @@
 // optimal solution checks one char at a time
 function isPalindrome(s){
     let str = s.toString();
-    for(let i = 0; i < str.length; i++){
+    for(let i = 0; i < Math.floor(str.length/2); i++){
         if(str.charAt(i) !== str.charAt(str.length - 1 - i)) return false;
     }
     return true;

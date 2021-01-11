@@ -6,6 +6,7 @@ describe('isPalindrome', function(){
     });
     it('should return whether or not a string is a palindrome', () => {
         expect(isPalindrome('hannah')).toBe(true);
+        expect(isPalindrome('leveel')).toBe(false);
         expect(isPalindrome('barry')).toBe(false);
         expect(isPalindrome(123456)).toBe(false);
         expect(isPalindrome('.')).toBe(true);
