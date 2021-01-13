@@ -11,11 +11,7 @@
 function solution(num){
     let ourArr = [];
     for (let i = 1; i < num; i++){
-      if(i % 3 === 0 && i % 5 === 0){
-        ourArr.push(i)
-      } else if (i % 5 === 0){
-        ourArr.push(i)
-      } else if (i % 3 === 0){
+      if(i % 3 === 0 || i % 5 === 0){
         ourArr.push(i)
       } 
     }
