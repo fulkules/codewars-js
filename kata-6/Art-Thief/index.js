@@ -1,4 +1,7 @@
-// Imagine you are a professional thief and you’ve broken into an art museum. The security will only go off if adjacent paintings are taken off a wall. Given an array of numbers representing the value of each painting determine the maximum value of stolen paintings. In the following array of painting values: [3,5,6,2,1,8], the maximum heist value would be from 3,6,8 for a total of 17.
+// Imagine you are a professional thief and you’ve broken into an art museum. The security will only go off
+// if adjacent paintings are taken off a wall. Given an array of numbers representing the value of each painting
+// determine the maximum value of stolen paintings. In the following array of painting values: [3,5,6,2,1,8],
+// the maximum heist value would be from 3,6,8 for a total of 17.
 
 
 
