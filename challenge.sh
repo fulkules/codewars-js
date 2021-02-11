@@ -4,7 +4,7 @@ echo "Preparing merge to git"
 
 echo '
 	git add .
-	git commit -m ...
+	git commit -m '...'
 	git push
 	git checkout master
 	git pull
@@ -15,7 +15,7 @@ echo '
 #### NOTE IF YOU ADD A LINE HERE ADD IT ABOVE JUST FOR BETTER MESSAGING -BJM 3/7/2018
 
     git add .
-	git commit -m "$msg"
+	git commit -m 'kata challenge'
 	git push
 	git checkout master
 	git pull
