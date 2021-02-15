@@ -12,7 +12,7 @@ echo '
 	git checkout challenge
 '
 
-#### NOTE IF YOU ADD A LINE HERE ADD IT ABOVE JUST FOR BETTER MESSAGING -BJM 3/7/2018
+#### NOTE IF YOU ADD A LINE HERE ADD IT ABOVE JUST FOR BETTER MESSAGING
 
     git add .
 	git commit -m 'kata challenge'
