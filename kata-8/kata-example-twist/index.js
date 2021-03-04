@@ -7,9 +7,10 @@
 
 // https://tc39.es/ecma262/#sec-array.prototype.fill
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill
+// no IE support
 var websites = new Array(1000).fill("codewars");
 
-// best practice
+// best practice & IE compatible
 // while (websites.length < 1000) websites.push("codewars")
 
 module.exports = websites;
