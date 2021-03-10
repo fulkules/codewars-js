@@ -40,6 +40,13 @@ const dupCount = text => {
 //   return (text.toLowerCase().split('').sort().join('').match(/([^])\1+/g) || []).length;
 // }
 
+// Alternate solution
+// function duplicateCount(text){
+//   return text.toLowerCase().split('').filter(function(val, i, arr){
+//     return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i;
+//   }).length;
+// }
+
 dupCount("indivisibilities");
 
 module.exports = dupCount;
