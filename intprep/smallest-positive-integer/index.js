@@ -25,7 +25,7 @@
 function solution(A){
     let sorted = [...new Set(A)].sort((a, b) => a - b);
     for(let i = 0; i < sorted.length + 1; i++){
-        if(sorted[i] < 0) return 1;
+        if(sorted[sorted.length - 1] < 0) return 1;
         if(sorted[i] !== i + 1) return (i + 1);
     }
 }
