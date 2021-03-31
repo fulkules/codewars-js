@@ -17,7 +17,7 @@
 // separate the word into array of letters
     // if the idx position is odd build str with lowerCase letter
     // if idx pos is even build str with upperCase letter
-// replace even indexed chars in each word to uppercase and odd chars to lowercase
+// return built string
 
 function toWeirdCase(string){
     let strArr = string.split(' '),
