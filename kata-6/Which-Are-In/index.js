@@ -34,7 +34,7 @@ function inArray(a1, a2) {
         });
         return found;
       }).sort();
-    }
+}
     
     // refactor
     // const inArray = (a1, a2) => {

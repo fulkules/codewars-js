@@ -15,7 +15,7 @@
 // iterate the array forward
 // iterate the array backward
 // if the items at cur pos are not the same item, and they equal the target
-// return the idx pos of eace
+// return the idx pos of each
 
 
 // brute force
