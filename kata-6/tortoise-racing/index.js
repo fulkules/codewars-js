@@ -64,4 +64,13 @@ function race(v1, v2, g) {
 //     return [Math.floor(time), Math.floor((time * 60) % 60), Math.floor((time * 3600) % 60)];
 // }
 
+// interesting solution
+// function race(v1, v2, g) {
+//     if (v1 >= v2) {
+//       return null;
+//     }
+//     var time = new Date (g / (v2 - v1) * 3600 * 1000);
+//     return [time.getHours(), time.getMinutes(), time.getSeconds()];
+// }
+
 module.exports = race;
