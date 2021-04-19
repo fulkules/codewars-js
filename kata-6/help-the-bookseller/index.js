@@ -28,22 +28,26 @@
 // In the result codes and their values are in the same order as in M.
 
 // fn(arr, arr) => string
-// get groups of items that fall into same categories that are found in listOfCat
-    //
-// get the sum of all items in each category
-// build a string with the group totals
+// initialize an empty obj
+// if nothing in list early return ''
+// iterate the list of Art
+    // assign first char of each item to obj as key
+    // sum the total of the num inside the string
+// iterate the list of Cat
+    // build the string at each index
+// join the string and return
 
 function stockList(listOfArt, listOfCat) {
-    let qs = {};
+    let inv = {};
     if (!listOfArt.length) return '';
 
-    listOfArt.forEach(function(art) {
-        let cat = art[0];
-        qs[cat] = (qs[cat] | 0) + +art.split(' ')[1];
+    listOfArt.forEach(function(art) { // 'ABART 20', 'CDXEF 50', ...
+        let cat = art[0];  //
+        inv[cat] = (inv[cat] | 0) + +art.split(' ')[1];
     });
 
     return listOfCat.map(function(c) {
-        return '(' + c + ' : ' + (qs[c] | 0) + ')';
+        return '(' + c + ' : ' + (inv[c] | 0) + ')';
     }).join(' - ');
 }
 
