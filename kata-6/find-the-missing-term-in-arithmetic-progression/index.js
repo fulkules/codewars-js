@@ -13,7 +13,9 @@
 // this is a more mathematical thinking problem
 // get the sum of all elements then subtract it from the target sum, this will give you the missing number
     // we know that the target length would be one more than our list
-    // then we need to get the sum of the first item and last item in the list and divide this sum by 2 to get our target sum
+    // we need to get the target length
+    // multiplied by the sum of the first item and last item in the list
+    // and divide this sum by 2 to get our target sum
         // (4 + 1) * (1 + 3) / 2 = 10
 
 const findMissing = list => {
