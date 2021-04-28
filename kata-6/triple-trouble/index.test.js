@@ -11,6 +11,10 @@ describe('tripledouble', function() {
         expect(tripledouble(1222345,12345)).toStrictEqual(0);
         expect(tripledouble(666789, 12345667)).toStrictEqual(1);
         expect(tripledouble(10560002, 100)).toStrictEqual(1);
+        expect(tripledouble(7656965333888444, 79591733388)).toStrictEqual(1);
+        expect(tripledouble(36833999444555890000, 158139999)).toStrictEqual(1);
+        expect(tripledouble(876284999222555100, 7813869911)).toStrictEqual(1);
+        expect(tripledouble(2111666282236331, 2483243484666344)).toStrictEqual(1);
         expect(tripledouble(1112, 122)).toStrictEqual(0);
     });
 });
