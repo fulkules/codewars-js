@@ -52,10 +52,29 @@
 //
 // thirt(321) calculates 48, 48 and returns 48
 
-
+// fn(num) => num
+// initialize the pattern in an array
+// initialize an array from the num and reverse it
+// while the num is over 2 digits
+    // follow the math formula to get the sum of reversed num array
+    // reassign the values of n and the rev array from the new sum
+// return the num once it is less than three digits
 
 function thirt(n){
-    
+    let pattern = [1, 10, 9, 12, 3, 4],
+        arr = Array.from(String(n), Number).reverse();
+    while(n > 99){
+        n = arr.reduce((acc, cur, i) => acc + (cur * pattern[i % 6]));
+        arr = Array.from(String(n), Number).reverse();
+    }
+    return n;
 }
+
+// voted best practice
+// function thirt(n) {
+//   const nums = [1,10,9,12,3,4]
+//   let sum = (''+n).split('').reverse().reduce((sum,v,i) => sum + v * nums[i%nums.length], 0)
+//   return sum === n ? n : thirt(sum)
+// }
 
 module.exports = thirt;
