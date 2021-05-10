@@ -17,15 +17,17 @@
 // You can see another examples in the "Sample tests".
 
 // fn(str) => str
-// convert the string to an array separating the names
-// sort names alphabetically
-
-function alphabetize(arr){
-
-}
+// "Wilfred:Corwill;Fred:Corwill;Betty:Tornbull;Barney:Tornbull;"
+// ['WILFRED:CORWILL', 'FRED:CORWILL', 'BETTY:TORNBULL', 'BARNEY:TORNBULL']
+// ['CORWILL, FRED', 'CORWILL, WILFRED', 'TORNBULL, BARNEY', 'TORNBULL, BETTY']
+// '(CORWILL, FRED)(CORWILL, WILFRED)(TORNBULL, BARNEY)(TORNBULL, BETTY)'
 
 function meeting(s){
-
+    let res = s.toUpperCase().split(';')
+                .map(name => name.split(':').map(n => n).reverse().join(', '))
+                .sort()
+                .join(')(');
+    return `(${res})`;
 }
 
 module.exports = meeting;
