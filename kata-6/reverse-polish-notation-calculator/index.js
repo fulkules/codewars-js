@@ -16,7 +16,7 @@
 // iterate expr and push nums into stack array
     // once out of numbers, you reach operators, pop out last 2 nums and perform operations
 // add the result to stack
-// if stack has more than one number and we are out of operators, throw error, else return the result
+// return the result
 
 function calc(expr){
     if(!expr) return 0;
