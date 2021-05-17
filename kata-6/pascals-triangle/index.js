@@ -28,8 +28,44 @@
 
 // fn(num) => arr
 
-function pascalsTriangle(n){
 
+function pascalsTriangle(n){
+    let triangle = [];
+
+//First base case
+    if(n === 0) return triangle;
+
+    for (let i = 0; i < n; i++) {
+        triangle[i] = [];
+//Second base case
+        triangle[i][0] = 1;
+
+        for (let j = 1; j < i; j++) {
+            triangle[i][j] = triangle[i-1][j-1] + triangle[i-1][j]
+        }
+//The last element of all rows are always 1.
+        triangle[i][i] = 1;
+    }
+    return [].concat(...triangle);  // triangle.flat() equivalent for older js versions
 }
+
+// best practice
+// function pascalsTriangle(n) {
+//   let pascal = [];
+//   let idx = 0;
+//
+//   for ( let i = 0; i < n; i++ ) {
+//     idx = pascal.length - i;
+//     for ( let j = 0; j < i+1; j++ ) {
+//       if ( j === 0 || j === i ) {
+//         pascal.push(1);
+//       } else {
+//         pascal.push( pascal[ idx+j ] + pascal[ idx+j-1 ] );
+//       }
+//     }
+//   }
+//
+//   return pascal;
+// }
 
 module.exports = pascalsTriangle;
