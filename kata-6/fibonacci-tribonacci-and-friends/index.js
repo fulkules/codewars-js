@@ -16,8 +16,9 @@
 // xbonacci {1,1} produces the Fibonacci sequence
 
 // fn(arr, num) => arr
+// early return for edge case when sig has values but n is 0
 // initialize a new array copied from the signature
-// iterate up to n
+// iterate up to n - signature length (already have the signature in new array)
     // add up the previous (sig.length) chars and put into new array
         // make a copy of prev (sig.length) chars and get the sum
         // put this sum into new array
