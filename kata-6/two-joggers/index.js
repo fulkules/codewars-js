@@ -30,7 +30,7 @@
 
 
 // fn(num, num) => arr
-// find the lowest common denominator e.g.- LCD of 5, 3 is 15
+// find the lowest common multiple e.g.- LCM of 5, 3 is 15
 // divide the LCD by x then y
 // return valuws in an array (tuple)
 
